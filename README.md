@@ -5,3 +5,11 @@ run:
 docker-compose up -d
 ```
 ```http://localhost:8085```
+
+## (optional) set casaos docker to systemd for automatic restart when computer shutdown
+```
+sudo cp casaos.service /etc/systemd/system/casaos.service
+sudo systemctl daemon-reload
+sudo systemctl enable casaos.service
+sudo systemctl start casaos.service
+```
