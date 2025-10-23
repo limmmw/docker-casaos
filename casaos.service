@@ -12,10 +12,10 @@ RemainAfterExit=yes
 TimeoutStartSec=0
 
 # Pastikan environment-nya cocok
-User=snowfall
-Group=snowfall
+User=user #sesuaikan
+Group=user #sesuaikan
 
-# Restart policy (optional, berguna jika docker-compose gagal start)
+# Restart policy
 Restart=on-failure
 RestartSec=10s
 
